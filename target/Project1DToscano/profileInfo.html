@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+		<style>
+			h1{
+				font-family:"Arial";
+				font-size:40px;
+				text-align:center;
+			}
+			.disPlay{
+				font-size:28px;
+				font-family:"Arial";
+				float: right;
+			}
+			.disPlay2{
+				font-size:20px;
+				font-family:"Arial";
+				float: right;
+			}
+			form{
+				padding-right: 15px;
+				padding-top: 15px;
+			}
+			.inPut{
+				font-family:"Arial";
+				font-size:20px;
+				float: right;
+			}
+			.prof{
+				float: right;
+			}
+			.pages{
+				margin: 15px;
+				margin-right:0;
+				background-color:lightblue;
+				padding:5px 0;
+				width:100px;
+			}
+			button{
+				margin-left: 15px;
+				margin-bottom: 15px;
+				margin-top: 15px;
+			}
+		</style>
+	</head>
+	<body onload="fillOut()">
+		<div style="background-color:lightblue">
+			<h1>Film Forums</h1>
+		</div>
+		
+		<div style="background-color:lightblue">
+			<button class="pages">Topics</button>
+			<button class="pages">Your Replies</button>
+			<button class="pages">Moderate</button>
+		</div>
+		
+		<br />
+		
+		<form style="background-color:lightblue">
+			<div class="disPlay" id="userID">
+			</div>
+			<br /> <br /> <br />
+			<div class="disPlay2" id="isAdmin">
+				Account Type: Guest
+			</div>
+			<br /> <br />
+			<input class="inPut" type="text" id="userEmail" name="userEmail" placeholder="Add an email" />
+			<br /> <br />
+			<button class="prof">Update Profile</button>
+			<button class="prof">Log out</button>
+		</form>
+	</body>
+	<script src="profileInfoDOM.js"></script>
+</html>
